@@ -1,19 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --primary-bg: #1d201f;
-    --secondary-bg: #7d7c7a;
-    --primary-text: #f7f7ff;
-    --accent-color: #ff9000;
+    --primary-bg: #121212;
+    --secondary-bg: #1e1e1e;
+    --primary-text: #e4e4e7;
+    --secondary-text: #9ca3af;
+    --accent-color: #f97316;
+    --boarder: #2f3337;
     --standard-gap: 40px;
+    --block-gap: 20px;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
     background: var(--primary-bg);
     color: var(--primary-text);
+    margin: var(--standard-gap);
+}
+
+.siteLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    text-align: center;
+    background: var(--secondary-bg);
+    border-radius: 12px;
+}
+
+li{
+    font-size: 32px;
+    display: inline;
+    padding-right: 100px;
+    margin-bottom: 24px;
+}
+
+a{
+    color: var(--accent-color);
 }
 
 #about{
-    background: var(--secondary-bg)
+    background: var(--secondary-bg);
+    padding: 2.5px var(--block-gap);
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
+
+#projects{
+    background: var(--secondary-bg);
+    padding: 2.5px var(--block-gap);
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
+
+#contact{
+    background: var(--secondary-bg);
+    padding: 2.5px var(--block-gap);
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+h2{
+    font-size: 28px;
+}
+
+footer{
+    color: var(--secondary-text);
 }
