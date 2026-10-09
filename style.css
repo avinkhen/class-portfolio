@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root{ /* I looked it up, this counts as a ruleset */
     --primary-bg: #121212;
     --secondary-bg: #1e1e1e;
     --primary-text: #e4e4e7;
     --secondary-text: #9ca3af;
     --accent-color: #f97316;
+    --secondary-accent: #cf6214;
     --boarder: #2f3337;
     --standard-gap: 40px;
     --block-gap: 20px;
@@ -16,12 +17,32 @@ body{
     background: var(--primary-bg);
     color: var(--primary-text);
     margin: var(--standard-gap);
+
+    animation: fadeIn ease 2s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Note: I couldn't find a way to make the animation not happen until all images were loaded without using JavaScript, and I'm not sure if we are allowed to use JS for this assignment so the last image might not load before the animation happens */
 
 .siteLogo{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 175px;
+    transition: transform 0.3s ease;
+}
+
+.siteLogo:hover{
+    transform: scale(1.075);
 }
 
 ul{
@@ -33,12 +54,20 @@ ul{
 li{
     font-size: 32px;
     display: inline;
-    padding-right: 100px;
+    padding-right: 50px;
     margin-bottom: 24px;
 }
 
-a{
+a:link{
     color: var(--accent-color);
+}
+
+a:visited{
+    color: var(--accent-color);
+}
+
+a#ev:visited{
+    color: var(--secondary-accent);
 }
 
 #about{
@@ -62,7 +91,27 @@ a{
     border-radius: 12px;
 }
 
+.zoom-image{
+    transform-origin: left;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
 
+.zoom-image:hover{
+    transform-origin: left;
+    transform: scale(1.075);
+}
+
+.zoom-image-2{
+    transform-origin: left;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.zoom-image-2:hover{
+    transform-origin: left;
+    transform: scale(1.075);
+}
 
 h1{
     text-align: center;
@@ -73,5 +122,12 @@ h2{
 }
 
 footer{
+    position: relative;
     color: var(--secondary-text);
+}
+
+.scroll-button{
+    position: absolute;
+    right: 20px;
+    top: 50%;
 }

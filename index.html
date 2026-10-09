@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Henry Avink</title>
     <link rel="icon" type="image/jpg" href="Pictures/SiteLogo.jpg"> <!--Makes the icon in the tab the website icon-->
+    <style>
+        html, body{
+            background-color: #121212;
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <a href="#index.html"><img src="Pictures/SiteLogo.jpg" class="siteLogo" alt="Henry (Me)" width="175"></a>
+        <a href="#index.html"><img src="Pictures/SiteLogo.jpg" class="siteLogo" alt="Henry (Me)" width="175"  title="Me. Click to go home"></a>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -24,19 +29,19 @@
         </section>
         <section id="about">
             <h2>About</h2>
-            <p>I am currently the Head of IT at <a href="https://www.echovalleyfun.com" target="_blank">Echo Valley</a> (a winter fun park). In that role I am the main person modifying the website, one of the main people working with the backend of our POS system, and the person who manages all things related to the Google Workspace (such as custom email domains, sorting inboxes, etc.). In my spare time I enjoy playing games, making games, and making laser shows. I also enjoy doing lighting for theater.</p>
+            <p>I am currently the Head of IT at <a href="https://www.echovalleyfun.com" target="_blank" id="ev">Echo Valley</a> (a winter fun park). In that role I am the main person modifying the website, one of the main people working with the backend of our POS system, and the person who manages all things related to the Google Workspace (such as custom email domains, sorting inboxes, etc.). In my spare time I enjoy playing games, making games, and making laser shows. I also enjoy doing lighting for theater.</p>
         </section>
         <section id="projects">
             <h2>Projects</h2>
             <article>
                 <h3>NES Pinball (1984) Port</h3>
                 <p>A port of the 1984 NES game "Pinball" made for a class project. Click the image below to play.</p>
-                <a title="Play Pinball" href="https://cannonb5.itch.io/mi231-classic-game-project" target="_blank"><img src="/Pictures/pinball.jpg" alt="Pinball (1984)" width="250"></a>
+                <a title="Play Pinball" href="https://cannonb5.itch.io/mi231-classic-game-project" target="_blank"><img src="/Pictures/pinball.jpg" alt="Pinball (1984)" width="250" class="zoom-image"></a>
             </article>
             <article>
                 <h3>Mech March</h3>
                 <p>A very simple auto-scroller game made for another class project. Click the image below to play.</p>
-                <a title="Play Mech March" href="https://henryavink.itch.io/mech-march" target="_blank"><img src="/Pictures/mechmarch.jpg" alt="Mech March" width="250"></a>
+                <a title="Play Mech March" href="https://henryavink.itch.io/mech-march" target="_blank"><img src="/Pictures/mechmarch.jpg" alt="Mech March" width="250" class="zoom-image-2"></a>
             </article>
         </section>
         <section id="contact">
@@ -48,7 +53,8 @@
         </section>
     </main>
     <footer>
-        <p>Copyright &copy; 2026 Henry Avink</p>
+        <p class="copyright">Copyright &copy; 2026 Henry Avink</p>
+        <a href="#" class="scroll-button">Back to Top ↑</a>
     </footer>
 </body>
 </html>
