@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{ /* I looked it up, this counts as a ruleset */
+:root{ /* I looked it up, this counts as a ruleset, so there should be 20 total */
     --primary-bg: #121212;
     --secondary-bg: #1e1e1e;
     --primary-text: #e4e4e7;
