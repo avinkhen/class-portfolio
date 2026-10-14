@@ -45,18 +45,57 @@ body{
     transform: scale(1.075);
 }
 
-ul{
+/* Prompt: Turn the navigation section into three buttons. They should be styled similar to the rest of the site and should react when clicked and hovered over. No JS or HTML, only css */
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px 0;
+    padding: 12px;
+    list-style: none;
     text-align: center;
     background: var(--secondary-bg);
     border-radius: 12px;
 }
 
-li{
-    font-size: 32px;
-    display: inline;
-    padding-right: 50px;
-    margin-bottom: 24px;
+
+
+nav li{
+    font-size: 18px;
+    display: block;
+    padding: 0;
+    margin: 0;
 }
+
+nav a{
+    display: block;
+    padding: 10px 22px;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    background: var(--primary-bg);
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover{
+    background: var(--accent-color);
+    color: var(--primary-bg);
+    transform: translateY(-2px);
+}
+
+nav a:active{
+    background: var(--secondary-accent);
+    transform: translateY(1px);
+}
+
+nav a:focus-visible{
+    outline: 2px solid var(--primary-text);
+    outline-offset: 3px;
+}
+
+/* Output ends here */
 
 a:link{
     color: var(--accent-color);
