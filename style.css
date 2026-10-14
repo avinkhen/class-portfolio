@@ -16,6 +16,11 @@ html{
     scroll-behavior: smooth;
 }
 
+main{
+    max-width: 1080px;
+    margin-inline: auto;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background: var(--primary-bg);
@@ -118,6 +123,7 @@ a#ev:visited{
     padding: 2.5px var(--block-gap);
     margin-bottom: 24px;
     border-radius: 12px;
+    text-align: center;
 }
 
 #projects{
@@ -182,4 +188,42 @@ footer{
 
 .video{
     width: 100%;
+}
+
+@media (min-width: 768px){
+    main{
+        max-width: 1080px;
+        .video{
+            width: 560px;
+            height: 315px;
+        }
+    }
+    #projects{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1080px){
+    main{
+        max-width: 2560px;
+        .video{
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+    }
+
+    #projects{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--block-gap);
+    }
+
+    #projects > h2{
+        grid-column: 1 / -1;
+    }
+
+    #projects .zoom-image, #projects .zoom-image-2{
+        width: 560px;
+    }
 }
