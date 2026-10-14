@@ -12,6 +12,10 @@
     --block-gap: 20px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background: var(--primary-bg);
@@ -163,10 +167,19 @@ h2{
 footer{
     position: relative;
     color: var(--secondary-text);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: auto;
 }
 
 .scroll-button{
     position: absolute;
     right: 20px;
     top: 50%;
+}
+
+.video{
+    width: 100%;
 }
