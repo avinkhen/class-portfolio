@@ -143,25 +143,25 @@ a#ev:visited{
 }
 
 .zoom-image{
-    transform-origin: left;
+    
     width: 100%;
     transition: transform 0.3s ease;
 }
 
 .zoom-image:hover{
-    transform-origin: left;
-    transform: scale(1.075);
+
+    transform: scale(1.025);
 }
 
 .zoom-image-2{
-    transform-origin: left;
+
     width: 100%;
     transition: transform 0.3s ease;
 }
 
 .zoom-image-2:hover{
-    transform-origin: left;
-    transform: scale(1.075);
+
+    transform: scale(1.025);
 }
 
 h1{
