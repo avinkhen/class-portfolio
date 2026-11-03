@@ -197,6 +197,10 @@ footer{
     transform: scale(1.025);
 }
 
+iframe{
+    border: none;
+}
+
 @media (min-width: 768px){
     main{
         max-width: 1080px;
