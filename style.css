@@ -23,6 +23,7 @@ main, nav{
 
 body{
     font-family: 'Roboto', sans-serif;
+    font-display: swap;
     background: var(--primary-bg);
     color: var(--primary-text);
     margin: var(--standard-gap);
