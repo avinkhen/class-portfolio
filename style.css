@@ -27,8 +27,8 @@ body{
     color: var(--primary-text);
     margin: var(--standard-gap);
 
-    animation: fadeIn ease 2s;
-    animation-fill-mode: forwards;
+    /*animation: fadeIn ease 2s;
+    animation-fill-mode: forwards;*/
 }
 
 @keyframes fadeIn{
