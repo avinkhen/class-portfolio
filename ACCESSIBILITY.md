@@ -1,0 +1,1 @@
+After running my site through the PageSpeed Insights test, there were no accessability issues found, so there was nothing to fix!
